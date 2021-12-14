@@ -1,0 +1,132 @@
+html{
+    font-size: 62.5%;
+}
+.box{
+    width: 100%;
+    background-color: rgb(21,21,21);
+}
+header{
+    width: 100%;
+    font-size: 2rem;
+    height: 7.5rem;
+    position: relative;
+}
+header span{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 19%;
+}
+header .touxiang{
+    width: 15%;
+    margin-left: 1rem;
+    position: absolute;
+    top: 10%;
+}
+header .jiantou{
+    width: 8%;
+    position: absolute;
+    top: 17%;
+    margin-left: 38%;
+}
+header .saoma{
+    width: 13%;
+    position: absolute;
+    top: 17%;
+    margin-left: 86%;
+}
+.vip{
+    width: 96%;
+    margin: 0 auto;
+}
+.vip img{
+    width: 100%;
+}
+
+.mylist{
+    width: 91%;
+    background-color: rgb(33,33,33);
+    margin: 0 auto;
+    border-radius: 1.7rem;
+}
+.mylist ul li{
+    width: 88%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(214, 212, 212,0.08);
+}
+.mylist ul li a{
+    display: flex;
+    display: inline-block;
+    width: 100%;
+    height: 6rem;
+    align-items: center;
+    color: white;
+    font-size: 1.4rem;
+    /* text-indent: 1rem; */
+    position: relative;
+}
+.tubiao{
+    width: 7%;
+    margin-right: .5rem;
+    padding-top: 1rem;
+}
+
+.jiantou1{
+    position: absolute;
+    width: 7%;
+    right: 10%;
+    top: 15%;
+}
+.mylist ul li a span{
+    position: absolute;
+    top: 23%;
+}
+.mylist ul li a .qiandao{
+    color: red;
+    font-size: 1rem;
+    left: 65%;
+    top: 30%;
+    border: 1px solid red;
+    border-radius: 9px;
+    text-align: center;
+    padding: 2px 1rem;
+}
+.mylist ul li a .liwu{
+    width: 10%;
+    margin-left: 60%;
+}
+
+
+.mylist ul li a .rijian{
+    width: 15%;
+    margin-left: 58%;
+    position: absolute;
+    top: 1rem;
+}
+button{
+    width: 90%;
+    height: 5.5rem;
+    border: none;
+    background-color: rgb(33,33,33);
+    border-radius: 1.7rem;
+    color:red;
+    font-size: 1.5rem;
+    margin: 2rem 2rem;
+    
+}
+.mb{
+    /* display: none; */
+    opacity: 1;
+    width: 100%;
+    height: 100rem;
+    background-color:rgb(16,16,16,.5);
+    position: absolute;
+    top: 0;
+}
+
+#night{
+    width: 15%;
+    margin-left: 58%;
+    position: absolute;
+    top: 1rem;
+}

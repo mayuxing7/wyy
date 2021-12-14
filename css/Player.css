@@ -1,0 +1,382 @@
+.start {
+    width: 100%;
+    height: 67rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    background-color: rgb(61,74,92);
+}
+
+.start-box {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.start-tou {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.start-tou .xiajian {
+    width: 2.5rem;
+    height: 1.2rem;
+}
+
+.start-tou .touxiang{
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid transparent; 
+    border-radius: 50%;
+    margin-left: 65%;
+    animation: cd 30s ease infinite alternate;
+}
+
+.start-tou .list{
+    width: 2.8rem;
+    height: 2.8rem;
+}
+.start-tou img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.background {
+    /* height: 25rem; */
+    position: relative;
+}
+
+#zhen {
+    height: 20rem;
+    position: absolute;
+    top: -7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.dingweihe {
+
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    text-align: center;
+    background: url(../images/images/大盘子.png) no-repeat;
+    background-size: contain;
+    left: 45%;
+    transform: translate(-42%,24%);
+    overflow: hidden;
+    border-radius: 50%;
+    transform-style: preserve-3d;
+    perspective: 100rem;
+}
+
+.dingweihe img {
+    width: 80%;
+    height: 80%;
+}
+
+
+
+/*  */
+.dingweihe .song_tu{
+    z-index: 9;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 15%;
+    /* transform: translate(-50%,-65%); */
+    left: 25%;
+    border-radius: 50%;
+    animation: cd 15s ease infinite alternate;
+}
+
+/* 歌词 */
+
+.geci{
+    display: none;
+    width: 100%;
+    height: 450px;
+    transform: translate(-10%,40%);
+    background-color: rgb(61,74,92) !important;
+}
+.aplayer{
+    background-color: rgb(61,74,92);
+    box-shadow: none !important;
+}
+.aplayer .aplayer-lrc p{
+    color: white !important;
+}
+.aplayer .aplayer-lrc:before{
+    /* background-color: rgb(61,74,92); */
+    display: none !important;
+}
+.aplayer .aplayer-lrc:after{
+    display: none !important;
+}
+.aplayer .aplayer-info .aplayer-controller{
+    display: none !important;
+}
+
+.aplayer.aplayer-withlrc .aplayer-pic{
+    display: none;
+}
+.aplayer .aplayer-info .aplayer-music {
+    display: none;
+}
+/* .aplayer.aplayer-withlrc .aplayer-pic{
+    display: none !important;
+} */
+
+.aplayer .aplayer-lrc p {
+    font-size: 15px !important;
+}
+
+
+.aplayer .aplayer-lrc {
+    /* display: none; */
+    position: relative;
+    height: 25rem !important;
+    text-align: center;
+    overflow: hidden;
+    margin: -10px 0 7px;
+}
+
+
+
+
+
+
+.dingweihe .cd{
+    animation: cd 10s ease infinite alternate;
+}
+
+@keyframes cd{
+    
+    0%{
+    transform: rotateZ(0deg);
+    
+    }
+    /* 50%{
+    transform: translateX(250px);
+    } */
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+.shou{
+    width: 100%;
+    height: 5.5rem;
+    color: white;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    position: relative;
+    animation: shoudong 2s ease infinite alternate;
+}
+.shou img{
+    width: 13%;
+    position: absolute;
+    top: -20%;
+    left: 45%;
+}
+@keyframes shoudong{
+    
+    0%{
+    transform: translateY(.8rem);
+    transform: scale(1);
+    
+    }
+    /* 50%{
+    transform: translateX(250px);
+    } */
+    100%{
+        transform: scale(1.2);
+        transform: translateY(1.2rem);
+    }
+}
+.shou p{
+    position: absolute;
+    top: 100%;
+    left: 40%;
+}
+.hobby {
+    width: 100%;
+    position: absolute;
+    top: 68%;
+}
+
+.hobby .xihuan {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.xihuan .xin{
+    width: 58%;
+    margin-left: 20%;
+    animation: xindong 1s ease infinite alternate;
+}
+
+@keyframes xindong{
+    0%{}
+    25%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    75%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+ 
+.xihuan dd {
+    width: 20%;
+}
+
+.xihuan dd img {
+    width: 90%;
+}
+
+.jindutiao {
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tiao {
+    width: 75%;
+    height: .2rem;
+    background: white;
+    position: relative;
+}
+
+.qiu {
+    position: absolute;
+    top: -.2rem;
+    left: 0;
+    z-index: 200;
+    width: .6rem;
+    height: .6rem;
+    background: white;
+    border-radius: 50%;
+}
+
+.ctrol {
+    width: 83%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+/* html{
+    font-size: 62.5%;
+}
+body{
+    background-color: rgb(61,74,92);
+}
+.box{
+    width: 100%;
+    height: 100rem;
+}
+header{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 6rem;
+    margin: 0 auto;
+}
+header .img1{
+    width: 2.8rem;
+    height: 1.4rem;
+    margin-left: 2%;
+    padding-top: 2rem;
+}
+header .img3{
+    width: 3.5rem;
+    height: 3.7rem;
+    margin-left: 80%;
+    padding-top: 2rem;
+}
+content{
+    width: 0%;
+}
+content .cd{
+    width: 75%;
+}
+content .cd1{
+    width: 70%;
+    position: absolute;
+    top: -5rem;
+    left: 12%;
+    z-index: 2;
+}
+content .cd2{
+    width: 70%;
+    margin-left: 60%;
+    transform: translate(-50%,50%);
+}
+content .shou{
+    width: 40%;
+    margin-left: 50%;
+    transform: translate(-50%,50%);
+}
+.cd p{
+    color: rgb(235, 229, 229);
+    font-size: 1.3rem;
+    position: absolute;
+    margin-left: 50%;
+    transform: translate(-50%,70%);
+    top: 100%;
+}
+.press{
+    width: 100%;
+}
+.press .jindu{
+    width: 100%;
+}
+.press .jindu img{
+    width: 100%;
+    height: 3px;
+}
+.press .press1{
+    width: 90%;
+    margin: 13rem auto 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.press .press1 img{
+    width: 70%;
+    margin-top: 43%;
+}
+.press .press1 .xin{
+    width: 67%;
+    margin-top: 60%;
+}
+.press .jindu{
+    width: 80%;
+    margin: 0 auto;
+}
+.press .press2{
+    width: 90%;
+    margin: 3rem 1.3rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} */

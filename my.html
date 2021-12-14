@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/清空默认css样式.css">
+    <link rel="stylesheet" href="./css/my.css">
+</head>
+
+<body>
+    <div class="mb">
+        <div class="box">
+            <header>
+                <a href="mymessage.html"><img src="./img/my/微信图片_20211209100427_03.gif" class="touxiang"></a>
+                <a href="index.html"><span>zaybhtl</span></a>
+                <img src="./img/my/微信图片_20211209100427_05.gif" alt="" class="jiantou">
+                <img src="./img/my/微信图片_20211209100427_07.gif" alt="" class="saoma">
+            </header>
+            <div class="vip">
+                <img src="./img/my/微信图片_20211209112522_03.gif" alt="">
+            </div>
+            <div class="mylist">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./img/my/微信图片_20211209100427_20.gif" class="tubiao">
+                            <span>消息中心</span>
+                            <img src="./img/my/1639054804(1).png" class="jiantou1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/my/微信图片_20211209100427_23.gif" class="tubiao">
+                            <span>云贝中心</span>
+                            <span class="qiandao">签到</span>
+                            <img src="./img/my/1639054804(1).png" class="jiantou1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/my/微信图片_20211209100427_25.gif" class="tubiao">
+                            <span>创作者中心</span>
+                            <img src="./img/my/1639054804(1).png" class="jiantou1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/my/微信图片_20211209100427_27.gif" class="tubiao">
+                            <span>演出</span>
+                            <img src="./img/my/1639054804(1).png" class="jiantou1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/my/微信图片_20211209100427_29.gif" class="tubiao">
+                            <span>商城</span>
+                            <img src="./img/my/微信图片_20211209100427_31.gif" class="liwu">
+                            <img src="./img/my/1639054804(1).png" class="jiantou1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/my/微信图片_20211209100427_34.gif" class="tubiao">
+                            <span>口袋彩铃</span>
+                            <img src="./img/my/1639054804(1).png" class="jiantou1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/my/微信图片_20211209100427_36.gif" class="tubiao">
+                            <span>游戏专区</span>
+                            <img src="./img/my/1639054804(1).png" class="jiantou1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/my/微信图片_20211209100427_38.gif" class="tubiao">
+                            <span>设置</span>
+                            <img src="./img/my/1639054804(1).png" class="jiantou1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/my/微信图片_20211209100427_34.gif" class="tubiao">
+                            <span>口袋彩铃</span>
+                            <img src="./img/my/1639054804(1).png" class="jiantou1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/my/微信图片_20211209100427_43.gif" class="tubiao">
+                            <span>夜间模式</span>
+                            <img src="./img/my/微信图片_20211209100427_41.gif" class="yejian" id='night'>
+                            <img src="./img/my/1639054804(1).png" class="jiantou1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/my/微信图片_20211209100427_46.gif" class="tubiao">
+                            <span>定时关闭</span>
+                            <img src="./img/my/1639054804(1).png" class="jiantou1">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button>退出登录</button>
+        </div>
+        </div>
+</body>
+<!-- <img src="./img/my/微信图片_20211209100427_41.gif" alt=""> -->
+</html>
+
+<script src="./js/字体自适应.js"></script>
+<script>
+    var night = document.getElementById('night');
+    // var rijian = document.getElementsByClassName("rijian")[0];
+    var mb_ = document.getElementsByClassName("mb")[0];
+
+    night.onclick= function(){
+        var yejian = document.getElementsByClassName("yejian")[0];
+        if(night.className=="yejian"){
+            night.src = "./img/my/微信图片_20211209144603_08.gif";
+            // night.removeAttribute("class");
+            night.setAttribute("class","yejian1");
+            // mb_.style.display="block";
+            mb_.style.opacity="0.9"
+
+        }else{
+            night.src = "./img/my/微信图片_20211209100427_41.gif";
+            // night.removeAttribute("class");
+            night.setAttribute("class","yejian");
+            // mb_.style.display="none";
+            mb_.style.opacity="1";
+        }
+
+    }
+
+
+
+    // var body_ = document.getElementsByTagName('body')[0];
+    // console.log(mb_);
+    // console.log(yejian);
+    // yejian.onclick = function () {
+
+    //     if(yejian.className="yejian"){
+    //         yejian.src = "./img/my/微信图片_20211209144603_08.gif";
+    //         yejian.setAttribute("class","yejian");
+    //         mb_.style.display="block";
+            
+    //     }
+    //     else{
+    //         yejian.src = " ./img/my/微信图片_20211209100427_41.gif";
+    //         yejian.setAttribute("id","yejian1");
+    //         mb_.style.display="none";
+            
+    //  }
+    // }
+
+        
+       
+   
+    // mb_.onclick=function(){
+    //     mb_.style.display="none";
+    //     yejian.src = "./img/my/微信图片_20211209100427_41.gif";
+    // }
+</script>

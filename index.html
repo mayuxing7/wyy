@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/清空默认css样式.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/APlayer.min.css">
+
+</head>
+<body>
+    <div class="box">
+        <header>
+            <a href="my.html"><img src="./img/index/微信图片_20211209100438_03_03.gif" class="img1"></a>
+            <div class="search">
+                <img src="./img/index/微信图片_20211209100438_03_05.gif" class="img2">
+                大悲咒 最近很火哦
+            </div>
+            <img src="./img/index/微信图片_20211209100438_03_07.gif" class="img3">
+        </header>
+        
+        <div class="box2">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./img/index/微信图片_20211209144626_03.gif" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/index/微信图片_20211209144622_03.gif" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/index/微信图片_20211209144618_03.gif" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/index/微信图片_20211209144611_03.gif" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/index/微信图片_20211209144608_03.gif" alt="">
+                  </div>
+                </div>          
+              </div>
+        </div>
+
+        <nav>
+            <ul class="list">
+                <li><a href="#"><img src="./img/index/1639035855(1).png" class="list11"></a></li>
+                <li><a href="#"><img src="./img/index/微信图片_20211209100438_04.gif" alt=""></a></li>
+                <li><a href="mysonglist.html"><img src="./img/index/微信图片_20211209100438_06.gif" alt=""></a></li>
+                <li><a href="#"><img src="./img/index/微信图片_20211209100438_08.gif" alt=""></a></li>
+            </ul>
+            <div class="recommend">
+                <h3>推荐歌单</h3>
+                <ul class="listday">
+                    <li><a href="#"><img src="./img/index/微信图片_20211209100438_03_16.gif" alt=""></a></li>
+                    <li><a href="#"><img src="./img/index/微信图片_20211209100438_03_17.gif" alt=""></a></li>
+                    <li><a href="#"><img src="./img/index/微信图片_20211209100438_03_18.gif" alt=""></a></li>
+                </ul>
+            </div>
+
+            <div class="notmiss">
+                <div class="title">
+                    <img src="./img/index/微信图片_20211209100438_10.gif" class="shuaxin">
+                    不可错过的金曲
+                    <img src="./img/index/QQ截图20211209164848.png" class="bofang">
+                </div>
+                <ul>
+                    <li><a href="#"><img src="./img/index/QQ截图20211209164632.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/index/微信图片_20211209144608_11.gif" alt=""></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="playerxm">
+          <!-- <img src="./img/song/089af3fd6d9202aef25421d914af019.jpg" alt="">
+          <video src="./video/刘莱斯 - 万千.mp3"></video>
+          <video src="./video/刘莱斯 - 万千.lrc"></video> -->
+        </div>
+        <footer>
+            <ul>
+                <li><a href="index.html"><img src="./img/index/微信图片_20211209100438_03.gif" alt=""> </a></li>
+                <li><a href="Player.html"><img src="./img/index/微信图片_20211209100438_05.gif" alt=""></a></li>
+                <li><a href="mysonglist.html"><img src="./img/index/微信图片_20211209100438_07.gif" alt=""></a></li>
+                <li><a href="#"><img src="./img/index/微信图片_20211209100438_09.gif" alt=""></a></li>
+                <li><a href="#"><img src="./img/index/微信图片_20211209100438_11.gif" alt=""></a></li>
+            </ul>
+        </footer>
+        
+    </div>
+</body>
+</html>
+<script src="./js/swiper-bundle.min.js"></script>
+
+<script src="./js/APlayer.min.js"></script>
+<script>
+  var mySwiper = new Swiper('.swiper-container', {
+    initialSlide: 2,
+    direction: 'horizontal',
+    loop: true,//循环轮播
+    // 切换点击按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+
+    },
+
+    autoplay: true,//等同于以下设置  
+    autoplay: {
+      delay: 1500,
+      stopOnLastSlide: false,//如果设置为true，当切换到最后一个slide时停止自动切换。（loop模式下无效）。
+      disableOnInteraction: false,//滑动后停止自动切换    false 滑动不停止
+    },
+
+    pagination: {
+      el: '.swiper-pagination',//分页器
+      clickable: true,  //点击下边分页器到对应界面
+      type: 'bullets',   //改变分页器格式  fraction分式
+    },
+    effect: 'slide',//切换效果'slide'（普通切换、默认）,"fade"（淡入）"cube"（方块）"coverflow"（3d流）"flip"（3d翻转）。
+
+  })
+
+
+
+
+// 播放器
+const ap = new APlayer({
+    container: document.getElementsByClassName('playerxm')[0],
+    mini: false,
+    autoplay: false,
+    theme: '#FADFA3',
+    loop: 'all',
+    order: 'random',
+    preload: 'auto',
+    volume: 0.7,
+    mutex: true,
+    listFolded: false,
+    listMaxHeight: 90,
+    lrcType: 3,
+    audio: {
+            name: '万千',
+            artist: '刘莱斯',
+            url: './video/刘莱斯 - 万千.mp3',
+            cover: './img/song/089af3fd6d9202aef25421d914af019.jpg',
+            lrc: './video/刘莱斯 - 万千.lrc',
+            theme: ' rgb(154, 149, 145)'
+        },
+});
+
+
+// // 点击加载播放器
+// const ap = new APlayer({
+//     container: document.getElementsByClassName('playerxm'),
+//     listFolded: false,
+//     listMaxHeight: 90,
+//     lrcType: 3,
+//     audio: 
+//         {
+//             name: '万千',
+//             artist: '刘莱斯',
+//             url: './video/刘莱斯 - 万千.mp3',
+//             cover: './img/song/089af3fd6d9202aef25421d914af019.jpg',
+//             lrc: './video/刘莱斯 - 万千.lrc',
+//             theme: '#ebd0c2'
+//         },
+       
+// });
+</script>

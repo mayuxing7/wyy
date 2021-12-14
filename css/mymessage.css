@@ -1,0 +1,94 @@
+html{
+    font-size: 62.5%;
+}
+.box{
+    width: 100%;
+    background-color: rgb(21,21,21);
+}
+header{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 6rem;
+    margin: 0 auto;
+}
+header .img1{
+    width: 3.5rem;
+    height: 3.4rem;
+    margin-left: 2%;
+}
+header .img3{
+    width: 3.5rem;
+    height: 3.7rem;
+    margin-left: 80%;
+}
+.addtp{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 1rem;
+}
+
+.matou{
+    width: 90%;
+    height: 10rem;
+    margin: 4rem auto 1rem;
+    background-color: rgb(42,43,42);
+    border-radius: 1.7rem;
+    color: white;
+    font-size: 1.7rem;
+    text-align: center;
+    position: relative;
+}
+.matou p{
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.matou span{
+    position: absolute;
+    font-size: .8em;
+    color: gray;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.touxiang{
+    width: 20%;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.matou .vip{
+    width: 18%;
+    position: absolute;
+    left: 61%;
+    top: 33%;
+}
+.listmy{
+    width: 100%;
+}
+.listmy img{
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+    height: 7rem;
+    background-color: rgb(26,26,26);
+}
+footer ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* footer ul li{
+    width: 33%;
+    height: 7rem;
+} */
+footer ul li img{
+    width: 5.3rem;
+    height: 5.8rem;
+}

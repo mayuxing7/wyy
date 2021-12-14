@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/清空默认css样式.css">
+    <link rel="stylesheet" href="./css/Player.css">
+    <link rel="stylesheet" href="./css/APlayer.min.css">
+    <script src="./js/APlayer.min.js"></script>
+
+</head>
+
+<body>
+    <div class="start">
+
+        <div class="start-box">
+            <div class="start-tou">
+                <a href="index.html"><img src="./img/player/下箭头.png" class="xiajian"> </a>
+                <div id="geming"></div>
+                <img src="./img/player/4ce565a95921fb4e62076aa2460f104.png" class="touxiang">
+                <img src="./img/player/play_icn_src.png" class="list">
+            </div>
+        </div>
+
+        <div class="background">
+            <div class="zhuanpan">
+                <img id="zhen" src="./img/player/微信图片_20211209100218.png" alt="">
+                <div class="dingweihe">
+                    <img src="./img/player/微信图片_20211209100146.png" class="cd">
+                    <img src="./img/song/089af3fd6d9202aef25421d914af019.jpg" class="song_tu">
+                </div>
+                <div class="shou">
+                    <img src="./img/player/手指.jpg" class="shou"> <br><br>
+                    <p>轻触查看歌词喔~</p>
+                </div>
+            </div>
+
+
+
+            <div class="geci">
+
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="hobby">
+            <dl class="xihuan">
+                <dd>
+                    <img src="./img/player/喜欢.png" class="xin">
+                </dd>
+                <dd>
+                    <img src="./img/player/下载.png">
+                </dd>
+                <dd>
+                    <img src="./img/player/changguo.png" alt="">
+                </dd>
+                <dd>
+                    <img src="./img/player/pinglun.png" alt="">
+                </dd>
+                <dd>
+                    <img src="./img/player/yiqi.png" alt="">
+                </dd>
+            </dl>
+
+
+
+            <dl class="ctrol">
+                <dd>
+                    <img src="./img/player/play_icn_loop.png" alt="">
+                </dd>
+                <dd>
+                    <img src="./img/player/play_btn_prev.png" alt="">
+                </dd>
+                <dd>
+                    <img src="./img/player/play_rdi_btn_pause.png" class="play" id="pause">
+                </dd>
+                <dd>
+                    <img src="./img/player/play_btn_next.png" alt="">
+                </dd>
+                <dd>
+                    <img src="./img/player/play_icn_src.png" alt="">
+                </dd>
+            </dl>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- <div class="box">
+        <header>
+            <a href="mysonglist.html"><img src="./img/player/下箭头.png" class="img1"></a>
+            <img src="./img/player/play_icn_src.png" class="img3">
+        </header>
+        <content>
+            <div class="cd">
+                <img src="./img/player/微信图片_20211209100218.png" class="cd1">
+                <img src="./img/player/微信图片_20211209100146.png" class="cd2"> 
+                <div class="shou">
+                    <img src="./img/player/手指.jpg" class="shou">
+                    <p>轻触查看歌词喔~</p>
+                </div>
+            </div>           
+        </content>
+        <div class="press">
+            <div class="press1">
+                <a href="#"><img src="./img/player/喜欢.png" class="xin"></a>
+                <a href="#"><img src="./img/player/下载.png" alt=""></a>
+                <a href="#"><img src="./img/player/changguo.png" alt=""></a>
+                <a href="#"><img src="./img/player/pinglun.png" alt=""></a>
+                <a href="#"><img src="./img/player/yiqi.png" alt=""></a>
+            </div>
+            
+            <div class="jindu">
+                <a href=""><img src="./img/player/微信图片_20211209100214.png"></a>
+            </div>
+            <div class="press2">
+                <a href="#"><img src="./img/player/play_icn_loop.png" alt=""></a>
+                <a href="#"><img src="./img/player/play_btn_prev.png" alt=""></a>
+                <a href="#"><img src="./img/player/play_rdi_btn_pause.png" alt="">  </a>
+                <a href="#"><img src="./img/player/play_btn_next.png" alt=""></a>
+                <a href="#"><img src="./img/player/play_icn_src.png" alt=""></a>
+            </div>
+       
+        </div>
+    
+    </div> -->
+</body>
+
+</html>
+<script>
+    var touch_ = document.getElementsByClassName("zhuanpan")[0];
+    // var geci=document.getElementsByClassName("aplayer-lrc-contents")[0];
+    // console.log(geci);
+    var geci_ = document.getElementsByClassName("geci")[0];
+
+    var pause_ = document.getElementById("pause");
+    pause_.onclick = function () {
+        ap.toggle();
+    }
+
+
+    const ap = new APlayer({
+        container: document.getElementsByClassName('geci')[0],
+        mini: false,
+        autoplay: false,
+        theme: '#FADFA3',
+        loop: 'all',
+        order: 'random',
+        preload: 'auto',
+        volume: 0.7,
+        mutex: true,
+        listFolded: false,
+        listMaxHeight: 90,
+        lrcType: 3,
+        audio: {
+            name: '万千',
+            artist: '刘莱斯',
+            url: './video/刘莱斯 - 万千.mp3',
+            cover: './img/song/089af3fd6d9202aef25421d914af019.jpg',
+            lrc: './video/刘莱斯 - 万千.lrc',
+            theme: ' rgb(154, 149, 145)'
+        },
+    });
+
+
+
+    touch_.onclick = function () {
+
+        touch_.style.display = "none";
+        geci_.style.display = "block";
+        // console.log(geci_);
+    }
+
+
+    var pause_=document.getElementById("pause");
+    pause_.onclick=function(){
+        var play_=document.getElementsByClassName("play")[0];
+        if(pause_.className=="play"){
+            pause_.src="./img/player/play_rdi_btn_play.png";
+            pause_.removeAttribute("class");
+            pause_.setAttribute("class","pause");
+        }
+        else{
+            pause_.src="./img/player/play_rdi_btn_pause.png";
+            pause_.removeAttribute("class");
+            pause_.setAttribute("class","play");
+        }
+        }
+</script>
